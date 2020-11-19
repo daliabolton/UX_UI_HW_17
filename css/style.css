@@ -10,11 +10,12 @@
     padding: 1%;
 }
 
-.nav{
+.nav {
     width: 73%;
     padding: 1%;
+    display: inline-block;
+    background-color: blue;
 
 }
-
 
 
