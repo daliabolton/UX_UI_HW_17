@@ -1,45 +1,37 @@
 
-h1{
-    font-family: 'Sacramento', cursive ;
+ h1{
+    font-family: 'Sacramento', cursive;
     color:hotpink;
     text-align: center;
-    padding: 20px;
     font-size: 50px;
 }
 
 .logo{
-    width: auto;
-    height: 75px;
-    
+    margin-bottom: -50px;
+    padding: 10px;
+    background-color: white;
 }
+
+
 
 .nav {
     text-align: center;
-    padding: 20px;
     font-size: 15px;
     font-weight: bold;
+    
+    padding: 10px;
+    color: black;
+    border-bottom:  5px double grey;
     
 }
 
 li {
-    padding: 12px;
+    padding: 20px;
     cursor: pointer;
-    display: inline-block;
-    
-}
-
-.cases{
-    padding: 12px;
-    text-align: center;
-    cursor: pointer;
-}
-
-ul{
-    background-color:white;
-    width: auto;
-    height:100px;
     display: inline;
+    margin: auto;
 }
+
 
 #footer{
     
@@ -47,13 +39,75 @@ ul{
     padding: 20px;
     font-size: small;
     text-align: center;
-    padding-top: 200px;
+    
     
     
 }
 
-body{
+
+.title {
+    text-align: center;
+    font-size: 18px;
+    font-family: cursive;
+    color: black;
+    background-color: white;
+    text-decoration-line: underline;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.workGrid{
+    display: grid;
+    margin: 20px 75px 75px;
+    grid-template-columns: 200px 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Grit Chew"
+    "FTC"
+    "PlantPal";
+    justify-content: space-around;
+    align-items: stretch;
+    column-gap: 10px;
+    row-gap: 2em;
+    padding: 20px;
+    
+      
+}
+
+p{
+    color: black;
+}
+
+
+html{
+    background-color: white;
+}
+
+h4{
+    color: black;
+    
+}
+
+.mySkills{
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    position: relative;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px double grey;
+   
+}
+
+.myPicture{
+    width: 33%;
+    float: left;
+    
+
+}
+
+.cases{
+    width: 80%;
+    float: left;
 }
