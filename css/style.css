@@ -6,8 +6,9 @@ font-size: 45px;
 /* identical to box height */
 color: #FFFFFF;
 text-shadow: 3px 4px 4px #316CE0;
-padding-top: 20px;
+padding-top: 30px;
 margin-top: 0px;
+margin-bottom: 0;
 
 }
 
@@ -28,6 +29,7 @@ font-family: Tajawal;
 font-style: normal;
 font-weight: bold;
 font-size: 15px;
+padding-top: -30px;
 
 /* identical to box height */
    
@@ -89,15 +91,24 @@ p{
     color: black;
 }
 
-h2{
+.myWork{
+    background-color: white;
+    margin-top: 150px;
+}
+
+#title{
+    font-family: 'Spicy Rice', cursive;
+    font-size: 20px;
+    text-align: left;
     color: black;
-    text-align: center;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 
 h4{
-    color: black;
-    
+    color: black; 
+   
     
 }
 
@@ -105,11 +116,9 @@ h4{
 
 .mySkills{
     position: relative;
-    background-color: white;
-   
+    background-color: black;
     
     
-   
     
     
 }
@@ -128,15 +137,14 @@ h4{
 
 
 h3{
-    color: black;
+   color: white;
     font-family: 'Spicy Rice', cursive ;
     text-align: center;
+   margin-top: 0px;
+   padding-top: 100px;
 }
 
-.open{
-    align-items: center;
-    text-align: center;
-}
+
 
 
 body{
@@ -154,9 +162,9 @@ body{
     visibility: hidden;
     position: absolute;
     background: #ffffff;
-    border: 3px solid #666666;
+    border: 3px solid black;
     width: 50%;
-    height: 50%;
+    height: auto;
     left: 25%;
   }
 
@@ -164,6 +172,7 @@ body{
     /*displays pop-up when "active" class is present*/
     visibility: visible;
     text-align: center;
+    background-color: #B5F2FF;
   }
 
   .popup-content {
@@ -175,20 +184,31 @@ body{
     /*Shows pop-up content when "active" class is present */
     visibility: visible;
   }
+
+  .open{
+      margin: 0% 45%; 
+      width: 10%;
+      font-family: 'Spicy rice', cursive;
+      
+    }
   
   button {
-    display: inline-block;
-    vertical-align: middle;
+    display: inline;
     border-radius: 30px;
-    margin: .20rem;
+    margin: .30rem;
     font-size: 1rem;
-    color: #666666;
-    background: #ffffff;
-    border: 1px solid #666666;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    
+    
   }
   
   button:hover {
     border: 1px solid #666666;
     background: #666666;
     color: #ffffff;
+    
   }
+
+  
