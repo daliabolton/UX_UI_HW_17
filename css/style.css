@@ -1,29 +1,36 @@
 
- h1{
-    font-family: 'Sacramento', cursive;
-    color:#FFA200;
-    text-align: center;
-    font-size: 50px;
-    text-shadow: 2px 2px rgba(111, 206, 250, 0.993);
-    margin: 0;
-    padding-top: 15px;
-    cursor: pointer;
+ h1{   
+text-align: center;
+font-family: 'Spicy Rice', cursive;
+font-size: 45px;
+/* identical to box height */
+color: #FFFFFF;
+text-shadow: 3px 4px 4px #316CE0;
+padding-top: 20px;
+margin-top: 0px;
+
+}
+
+.logo{
+    
+background-color: #DEB5FF;
+border-bottom: 20px solid  #B5F2FF;
+
 }
 
 
 
-
 .nav {
+    display: inline;
     text-align: center;
-    font-size: 15px;
-    font-weight: bold;
     padding: 10px;
-    color: black;
-    border-bottom: 5px double #FFA200;
+font-family: Tajawal;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+
+/* identical to box height */
    
-    
-    
-    
 }
 
 li {
@@ -37,36 +44,43 @@ li {
 #footer{
     font-size: small;
     text-align: center;
-    background-color: gray ;
+    background-color: lightgray ;
     width: 100%;
     height: 50px;
+    padding-top: 20px;
+    font-weight: bold;
     
     
     
 }
 
 
+
+
 .title {
-    text-align: center;
-    font-size: 18px;
-    font-family: cursive;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
     color: black;
-    text-decoration-line: underline;
-    margin: auto;
+    position: relative;
+    
+    padding: 20px;
+   
     
 }
 
 .workGrid{
     display: grid;
-    margin: auto;
+    
     grid-template-columns: 200px 1fr ;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
     "Grit Chew"
     "FTC"
     "PlantPal";
-    justify-content: space-around;
     padding: 20px;
+    background-color: white;
+    
 
       
 }
@@ -75,26 +89,33 @@ p{
     color: black;
 }
 
-
+h2{
+    color: black;
+    text-align: center;
+}
 
 
 h4{
     color: black;
     
+    
 }
 
+
+
 .mySkills{
-    display: flex;
-    flex-direction: column;
     position: relative;
-    padding: 20px;
-    text-align: center;
+    background-color: white;
+   
+    
     
    
+    
+    
 }
 
 .myPicture{
-    width: 33%;
+   width: 50%;
     float: right;
     
 
@@ -105,6 +126,69 @@ h4{
     float: left;
 }
 
-body{
-    margin: 0;
+
+h3{
+    color: black;
+    font-family: 'Spicy Rice', cursive ;
+    text-align: center;
 }
+
+.open{
+    align-items: center;
+    text-align: center;
+}
+
+
+body{
+    margin: auto;
+}
+
+
+.someSkills{
+    display: flex;
+
+}
+
+.popup-overlay {
+    /*Hides pop-up when there is no "active" class*/
+    visibility: hidden;
+    position: absolute;
+    background: #ffffff;
+    border: 3px solid #666666;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+  }
+
+  .popup-overlay.active {
+    /*displays pop-up when "active" class is present*/
+    visibility: visible;
+    text-align: center;
+  }
+
+  .popup-content {
+    /*Hides pop-up content when there is no "active" class */
+    visibility: hidden;
+  }
+
+  .popup-content.active {
+    /*Shows pop-up content when "active" class is present */
+    visibility: visible;
+  }
+  
+  button {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 30px;
+    margin: .20rem;
+    font-size: 1rem;
+    color: #666666;
+    background: #ffffff;
+    border: 1px solid #666666;
+  }
+  
+  button:hover {
+    border: 1px solid #666666;
+    background: #666666;
+    color: #ffffff;
+  }
