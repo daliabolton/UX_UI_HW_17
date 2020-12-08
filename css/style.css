@@ -12,38 +12,65 @@ margin-bottom: 0;
 
 }
 
-.logo{
-    
+.header{
+
 background-color: #DEB5FF;
+padding-bottom: 5px;
 border-bottom: 20px solid  #B5F2FF;
+
 
 }
 
 
 
-.nav {
+ul#end li{
     display: inline;
-    text-align: center;
-    padding: 10px;
-font-family: Tajawal;
-font-style: normal;
-font-weight: bold;
-font-size: 15px;
-padding-top: -30px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
 
 /* identical to box height */
    
+#menu-outer {
+    height: 70px;
+    background-color:  #DEB5FF;
+    color: black;
+    
 }
 
-li {
-    padding: 20px;
-    cursor: pointer;
-    display: inline;
+.table{
+    display: table;
+    margin: 0 auto;
     
+    
+}
+
+
+ul#nav li{
+    display: inline;
+    float: left;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer; 
+   
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+#nav{
+    
+    text-decoration: none;
 }
 
 
 #footer{
+    
     font-size: small;
     text-align: center;
     background-color: lightgray ;
@@ -55,6 +82,9 @@ li {
     
     
 }
+
+
+
 
 
 
@@ -111,21 +141,28 @@ h4{
    
     
 }
-
-
-
 .mySkills{
-    position: relative;
     background-color: black;
-    
-    
+}
+
+
+.someSkills {
+    position: relative;
+    background-color: #B5F2FF;
+    text-align: left;
+    list-style-type: circle;
     
     
 }
 
+
+
 .myPicture{
    width: 50%;
     float: right;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
     
 
 }
@@ -144,7 +181,11 @@ h3{
    padding-top: 100px;
 }
 
-
+h2{
+    padding: 10px;
+    
+    text-align: left;
+}
 
 
 body{
@@ -173,6 +214,8 @@ body{
     visibility: visible;
     text-align: center;
     background-color: #B5F2FF;
+    border: 3px solid white;
+    bottom: 30%;
   }
 
   .popup-content {
@@ -188,6 +231,7 @@ body{
   .open{
       margin: 0% 45%; 
       width: 10%;
+      height: 20%;
       font-family: 'Spicy rice', cursive;
       
     }
