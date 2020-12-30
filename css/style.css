@@ -1,28 +1,48 @@
 
- h1{   
-text-align: center;
-font-family: 'Spicy Rice', cursive;
-font-size: 45px;
-font-weight: 100;
-/* identical to box height */
-color: white;
-text-shadow: 2px 3px 3px hotpink;
-padding-top: 30px;
-margin-top: 0px;
-margin-bottom: 0;
+h1{   
+    text-align: center;
+    font-family: 'Spicy Rice', cursive;
+    font-size: 45px;
+    
+    /* identical to box height */
+    color: #FFFFFF;
+    text-shadow: 2px 3px 3px hotpink;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    
+    }
+.logo{
 
+    background-color: #5C92FF;
+    padding-bottom: 5px;
+    border-bottom: 20px solid  #2932D9;
+    text-align: center;
+    font-size: 45px;
+    
+    }
+
+    .row.no-gutters {
+        margin-left: 0;
+        margin-right: 0;
+      }
+p{
+    text-align: left;
+   
 }
 
-.header{
 
-background-color: #5C92FF;
-padding-bottom: 5px;
-border-bottom: 20px solid  #2932D9;
-
-
+li a{
+    
+    text-decoration: none;
+    color: white;
+    
 }
 
-
+.myWork{
+    margin-right: 50px;
+    margin-left: 50px;
+}
 
 ul#end li{
     display: inline;
@@ -30,23 +50,22 @@ ul#end li{
     cursor: pointer;
 }
 
+.nav-item{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-link.active{
+    font-weight: bold;
+}
+
+.nav.justify-content-center{
+    font-size: 17px;
+}
 
 
 /* identical to box height */
    
-#menu-outer {
-    height: 70px;
-    background-color:  #5C92FF;
-    color: black;
-    
-}
 
-.table{
-    display: table;
-    margin: 0 auto;
-    
-    
-}
 
 
 ul#nav li{
@@ -58,11 +77,7 @@ ul#nav li{
    
 }
 
-li a{
-    text-decoration: none;
-    color: white;
-    
-}
+
 
 #nav{
     
@@ -97,50 +112,48 @@ li a{
     font-family: 'Times New Roman', Times, serif;
     color: black;
     position: relative;
-    
     padding: 20px;
    
     
 }
 
-.workGrid{
-    display: grid;
-    
-    grid-template-columns: 200px 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "Grit Chew"
-    "FTC"
-    "PlantPal";
-    padding: 20px;
-    background-color: white;
-    
+ p{
+     margin-right: 20%;
+     font-family: 'Times New Roman', Times, serif;
+     
+ }
 
-      
-}
-
-p{
-    color: black;
-}
 
 .myWork{
     background-color: white;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     
 
 }
 
 #title{
     font-family: 'Spicy Rice', cursive;
-    font-size: 20px;
-    text-align: left;
+    font-size: 25px;
+    text-align: center;
     color: black;
     padding-top: 20px;
+    padding-right: 900px;
+    padding-bottom: 50px;
     
 }
-
+.col.box{
+    padding: 30px 50px;
+    border: 3px solid transparent;
+    background-clip:padding-box;
+  }
+  
 
 h4{
-    color: black; 
+    color: black;
+    font-size: 25px; 
+    font-family: 'Times New Roman', Times, serif;
    
     
 }
@@ -161,6 +174,8 @@ h4{
 
 
 
+
+
 .myPicture{
    width: 50%;
     float: right;
@@ -171,24 +186,20 @@ h4{
 
 }
 
-.cases{
-    max-width: 100%;
-    width: 80%;
-    float: left;
-}
+
 
 
 h3{
    color: white;
     font-family: 'Spicy Rice', cursive ;
     text-align: center;
+    
    margin-top: 0px;
    padding-top: 100px;
 }
 
 h2{
     padding: 10px;
-    
     text-align: left;
 }
 
@@ -260,8 +271,26 @@ body{
     
   }
 
+  button.close{
+      float: left;
+    margin: .50rem;
+    border-radius: 30px;
+    border: 1px solid black;
+      font-family: 'Times New Roman', Times, serif;
+
+  }
+
+
+
   @media screen and (max-width:800px) {
-      .header, .myWork, .logo, .mySkills, .table, #nav, #menu-outer  {
+    .header, .myWork, .logo, .mySkills, .table, #menu-outer, .square  {
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width:800px){
+      p{
           width: 100%;
       }
-    }
+  }
+

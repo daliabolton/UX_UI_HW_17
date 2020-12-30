@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,6 +9,7 @@
             <link rel="stylesheet" href="css/style.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             
@@ -16,40 +17,40 @@
         
    
     <body>
-        <section class="header">
+        <section class="logo"> 
+            <h1 onclick="location.href='https://daliabolton.github.io/portfolio/'" >Dalia Bolton
+                 </h1>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://daliabolton.github.io/about/">about</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">resume</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">art</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">contact</a>
+                </li>
+              </ul>
 
-            
-            <div class="logo">
-                <h1>Dalia Bolton</h1>
-                <div id="menu-outer">
-                    <div class="table">
-                    <ul id="nav">
-                        <li><a href="https://daliabolton.github.io/about/">about</a></li>
-                        <li><a href="https://daliabolton.github.io/UX_UI_HW_20/">work</a></li>
-                         <li><a href="#resume">resume</a></li>
-                         <li><a href="#art">art</a></li>
-                         <li><a href="#contact">contact</a></li>
-                        
-                    </ul>
-                </div>
-                </div>
-            
-            
-        </div>
         </section>
-
         <section class="mySkills">
         
 
             <div class="popup-overlay">
                 <!--Creates the popup content-->
                 <div class="popup-content">
-                  <h2>I am a...</h2>
+                  <h2 style="font-size: 25px; font-family: 'Times New Roman', Times, serif">I am a...</h2>
                   
                   <div>
                     <img class="myPicture" src="images/photoofme.png" style="max-width:100%;height:auto;">
                 </div>
-                <div class="someSkills">
+                <div class="someSkills" style="font-family: 'Times New Roman', Times, serif;">
                     
                     <ul> 
                         <li>Graphic designer</li>
@@ -60,45 +61,64 @@
                     </ul>
                 </div>
                   <!--popup's close button-->
-                  <button class="close">Close</button> </div>
+                  <button class="close" style="border-radius: 30px;">Close</button> </div>
               </div>
               <!--Content shown when popup is not displayed-->
-              <h3>Who am I?</h3>
-              <button class="open">click me</button>
+              <h3 style="font-size: 25px">Who am I?</h3>
+              <button class="open " style="border-radius: 12px;">click me</button>
             </section>
         
 
         <section class="myWork">
+            <h2 id= "title"> My Work</h2>
             
-                <h2 id= "title"> My Work</h2>
-                <div class="workGrid">
-                    <div> 
-                        <img class="cases" src="images/grit.png" style="max-width:100%;height:auto;">
-                        
-                    </div>
-                    <div>
-                        <h4>Grit Chew</h4>
-                        <p>A 3 week project worked on with a team of 5. Grit is a tobaccoless chew company looking to develop into the white collar market. Our team worked to redesign their website creating a clean and engaging look.</p>
-                        <button onclick="location.href='https://daliabolton.github.io/UX_UI_HW_20/'" type=button >Learn More</button>
-                    </div>
-                    <div> 
-                        <img class="cases" src="images/ftc.png">
-                    </div>
-                    <div>
-                        <h4>FTC</h4>
-                        <p>In another 3 week timeframe, I worked with 4 others to redesign the Federal Trade Commission Website. We focused on creating a better mobile experience and easier process for both consumers and businesses.</p>
-                        <button>Learn More</button>
-                    </div>
-                    <div>
-                        <img class="cases" src="images/plantpal.png">
-                    </div>
-                    <div>
-                        <h4>PlantPal</h4>
-                        <p>A designed app idea from scratch. We desinged an app that would allow people to buy and have plants delivered in a simple yet natural fashion.</p>
-                        <button>Learn More</button>
-                    </div>
+            <div class="container">
+                <div class="row no-gutters">
+                  <div class="col-md-4 box">
+                    <img src="images/grit.png"style="max-width:100%;height:auto;padding:50px;" >
+                  </div>
+                  
+                  <div class="col box">
                     
+                    <h4 style="font-size: 20px; text-align: left;">Grit Chew</h4>
+                        <p>A 3 week project worked on with a team of 5. Grit is a tobaccoless chew company looking to develop into the white collar market. Our team worked to redesign their website creating a clean and engaging look.</p>
+                        <button class="rounded" onclick="location.href='https://daliabolton.github.io/UX_UI_HW_20/'" type=button >Learn More</button>
+                  </div>
+                </div>
+                
+                <div class="row no-gutters">
+                      <div class="col-md-4 box">
+                        <img src="images/ftc.png" style="max-width:100%;height:auto;padding: 50px;">
+                      </div>
+                      
+                      <div class="col box">
+                        
+                        <h4 style="font-size: 20px; text-align: left; padding-top: 40px;">FTC</h4>
+                
+                        <p>In another 3 week timeframe, I worked with 4 others to redesign the Federal Trade Commission Website. We focused on creating a better mobile experience and easier process for both consumers and businesses.</p>
+                        <button class="rounded">Learn More</button>
+                      </div>
                     </div>
+
+                    <div class="row no-gutters">
+                        <div class="col-md-4 box">
+                            <img src="images/plantpal.png"  style="max-width:100%;height:auto;padding: 30px;">
+                        </div>
+                        
+                        <div class="col box">
+                            
+                            <h4 style="font-size: 20px; text-align: left; padding-top: 40px;">PlantPal</h4>
+                            <p>A designed app idea from scratch. We desinged an app that would allow people to buy and have plants delivered in a simple yet natural fashion.</p>
+                            <button class="rounded">Learn More</button>
+                        </div>
+                    </div>
+                        </div>
+
+                       
+              
+               
+               
+    
 
                 </section>
 
