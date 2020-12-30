@@ -3,6 +3,8 @@ h1{
     text-align: center;
     font-family: 'Spicy Rice', cursive;
     font-size: 45px;
+    margin: auto;
+   
     
     /* identical to box height */
     color: #FFFFFF;
@@ -198,6 +200,7 @@ h3{
    padding-top: 100px;
 }
 
+
 h2{
     padding: 10px;
     text-align: left;
@@ -245,10 +248,9 @@ body{
   }
 
   .open{
-      margin: 0% 45%; 
-      width: 10%;
-      height: 20%;
-      font-family: 'Spicy rice', cursive;
+     margin-left: 47%;
+      align-items: center;
+     font-family: 'Spicy rice', cursive;
       
     }
   
@@ -289,7 +291,7 @@ body{
   }
 
   @media screen and (max-width:800px){
-      p{
+      p,.open{
           width: 100%;
       }
   }
