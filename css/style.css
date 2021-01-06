@@ -3,9 +3,6 @@ h1{
     text-align: center;
     font-family: 'Spicy Rice', cursive;
     font-size: 45px;
-    margin: auto;
-   
-    
     /* identical to box height */
     color: #FFFFFF;
     text-shadow: 2px 3px 3px hotpink;
@@ -14,6 +11,7 @@ h1{
     cursor: pointer;
     
     }
+
 .logo{
 
     background-color: #5C92FF;
@@ -24,10 +22,7 @@ h1{
     
     }
 
-    .row.no-gutters {
-        margin-left: 0;
-        margin-right: 0;
-      }
+    
 p{
     text-align: left;
    
@@ -41,10 +36,12 @@ li a{
     
 }
 
-.myWork{
-    margin-right: 50px;
-    margin-left: 50px;
+body{
+    width: 100%;
+    margin: auto;
 }
+
+
 
 ul#end li{
     display: inline;
@@ -72,7 +69,7 @@ ul#end li{
 
 ul#nav li{
     display: inline;
-    float: left;
+    
     font-weight: bold;
     padding: 20px;
     cursor: pointer; 
@@ -92,11 +89,13 @@ ul#nav li{
     font-size: small;
     color: white;
     text-align: center;
-    background-color: rgb(121, 120, 120) ;
+    
+    background-color: rgb(155, 154, 154) ;
     width: 100%;
-    height: 70px;
+    height: 100px;
     padding-top: 20px;
     font-weight: bold;
+
     
     
     
@@ -120,7 +119,7 @@ ul#nav li{
 }
 
  p{
-     margin-right: 20%;
+     
      font-family: 'Times New Roman', Times, serif;
      
  }
@@ -162,6 +161,7 @@ h4{
 .mySkills{
     background-color: black;
     padding-bottom: 150px;
+    margin: 0 auto;
 }
 
 
@@ -198,8 +198,7 @@ h4{
 h3{
    color: white;
     font-family: 'Spicy Rice', cursive ;
-    text-align: center;
-    
+    text-align: center; 
    margin-top: 0px;
    padding-top: 100px;
 }
@@ -211,9 +210,7 @@ h2{
 }
 
 
-body{
-    margin: auto;
-}
+
 
 
 .someSkills{
@@ -292,18 +289,33 @@ body{
   @media screen and (max-width:800px) {
     .header, .myWork, .logo, #menu-outer, .square  {
         width: 100%;
+        margin: auto;
+       
+        
+       
     }
   }
 
   @media screen and (max-width:800px){
       p,.popup-content,.someSkills,.myPicture{
           width: 100%;
+          margin: auto;
+         
+          
       }
   }
 
   @media screen and (max-width:800px){
     .open{
         width: 25%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:800px){
+    .popup-overlay{
+        width: 50%;
+        margin: auto;
     }
 }
 
